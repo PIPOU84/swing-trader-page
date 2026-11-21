@@ -1,0 +1,12 @@
+/* Compléments propres à la page du soir (le reste vient de style.css, partagé avec l'app) */
+details.trade { padding: 0; }
+details.trade > summary { list-style: none; cursor: pointer; padding: 14px; }
+details.trade > summary::-webkit-details-marker { display: none; }
+details.trade[open] > summary { border-bottom: 1px solid var(--border); }
+details.trade .body { padding: 14px; }
+.chart { height: 300px; margin: 0 -6px 10px; }
+.hint { font-size: .8rem; color: var(--muted); }
+.chev { color: var(--muted); transition: transform .15s; }
+details[open] .chev { transform: rotate(90deg); }
+.section-title { margin: 1.2rem 0 .6rem; }
+.stale { background: rgba(240,180,41,.15); color: var(--warn); border-radius: var(--radius); padding: .6rem .9rem; }
